@@ -141,7 +141,7 @@ class Game extends React.Component {
     if(winner){
       status = 'Winner: ' + winner;
     }else if(this.state.history.length === 9 + 1){
-      status = 'Draw!';
+      status = 'Draw! Play again?';
     }else{
       status = 'Next Player: ' + (this.state.xIsNext ? 'X' : 'O');
     }
